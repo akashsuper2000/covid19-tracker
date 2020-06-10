@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flask App</title>
+    <link rel='stylesheet' type="text/css" href="{{ url_for('static', filename = 'bootstrap.css') }}" />
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename = 'styles.css') }}" />
+</head>
+
+<body>
+    <div class='parent'>
+        <h1 class='heads'>Tamil Nadu Statistics</h1>
+        
+        <table>
+        {% for j in table %}
+        <td><br/><br/><h3>{{j[0][1]}}</h3><br/></td>
+        {% for t in j %}
+
+            <tr>
+
+            {% for i in t %}
+                <td>{{ i }}</td>
+            {% endfor %}
+            </tr>
+        {% endfor %}
+        {% endfor %}
+         </table>
+        }
+
+    </div>
+</body>
+
+</html>

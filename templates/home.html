@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flask App</title>
+    <link rel='stylesheet' type="text/css" href="{{ url_for('static', filename = 'bootstrap.css') }}" />
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename = 'styles.css') }}" />
+</head>
+
+<body>
+    <div class='parent'>
+        <h1 class='heads'>COVID-19 Dashboard</h1>
+        <form class='form' method="get" action="/state">
+            <input type="submit" class='btn btn-md' value="State-wise Details">
+        </form>
+        <form class='form' method="get" action="/tn">
+            <input type="submit" class='btn btn-md' value="Tamil Nadu Details">
+        </form>
+    </div>
+</body>
+
+</html>
